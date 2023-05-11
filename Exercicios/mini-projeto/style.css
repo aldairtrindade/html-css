@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 255, 255, 0.392);
+    margin: 0px;
+}
+
+header{
+    background-image: linear-gradient(180deg, #85f17f, #014101);
+    height: 200px;
+    width: auto;
+    padding: 1px;
+    border: 1px;
+    box-shadow: 2px 2px 3px #01410189;
+
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px 2px #152615;
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px #0174018f;
+}
+
+nav > a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 6px;
+}
+
+a:hover{
+    
+    background-color: green;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+main{
+    background-color: white;
+    padding: 5px;
+    margin: 0px 100px 10px 100px;
+    border: 1px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+main > h2{
+    font-family: 'android';
+    text-align: center;
+    color: #013001;
+    text-shadow: 1px 1px 1px 1px #0130014f;
+}
+
+main > h3{
+    text-indent: 10px;
+    font-family: 'android';
+    background-color: #88ff8288;
+    color: #013001;
+    box-shadow: 1px 1px 2px 1px #96fc9141;
+    border-radius: 1px;
+}
+
+main > p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+article{
+    background-color: #c3f6c1;
+    margin: 10px;
+    padding: 0px 0px 20px 0px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 2px 1px #c8e6c780;
+}
+
+article > h4{
+    background-color: #85f17f;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    box-shadow: 1px 1px 1px 1px #8dd98a3e;
+}
+
+article > p{
+    margin: 5px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+iframe{
+    background-color: green;
+    padding: 8px;
+    margin: 0px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin: 0px;
+}
+
+footer > p{
+    margin: 0px;
+}
