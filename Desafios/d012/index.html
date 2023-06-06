@@ -5,66 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title>
-    <style>
-
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-
-        body{
-
-        }
-
-        header{
-            background-color: black;
-        }
-
-        header h1{
-            color: white;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 10vw;
-        }
-
-        header p{
-            color: white;
-            text-align: center;
-        }
-
-        header a{
-            color: white;
-            font-weight: bold;
-        }
-
-        section#img01{
-            background-image: url('imagens/background001.jpg');
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-        }
-
-        section#img02{
-            background-image: url('imagens/background002.jpg');
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-        }
-
-        section p{
-            height: 500px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 1.5em;
-        }
-
-        div#fora{
-            
-        }
-    </style>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
@@ -76,7 +17,7 @@
         </p>
     </header>
     <main>
-        <section>
+        <section class="normal">
             <p>
                 Estou ficando cansado<br>
                 Da tal tecnologia<br>
@@ -88,23 +29,19 @@
             </p>
         </section>
 
-        <section id="img01">
-            <div id="fora">
-                <div id="dentro">
-                    <p>
-                        Não é mais como era antes<br>
-                        É tudo abreviado<br>
-                        "Você" só tem duas letras<br>
-                        O "O" e o "E" foi riscado<br>
-                        Para declarar o amor<br>
-                        Basta botar uma flor<br>
-                        E um coração desenhado.
-                    </p>
-                </div>
-            </div>
+        <section class="imagem"> 
+            <p>
+                Não é mais como era antes<br>
+                É tudo abreviado<br>
+                "Você" só tem duas letras<br>
+                O "O" e o "E" foi riscado<br>
+                Para declarar o amor<br>
+                Basta botar uma flor<br>
+                E um coração desenhado.
+            </p>
         </section>
         
-        <section>
+        <section class="normal">
             <p>
                 Arroba agora não pesa<br>
                 É parte de um endereço<br>
@@ -116,7 +53,7 @@
             </p>
         </section>    
         <br>
-        <section>
+        <section class="normal">
             <p>
                 Pra piorar a liguagem<br>
                 O emoticom é um risco<br>
@@ -128,7 +65,7 @@
             </p>
         </section>
         
-        <section id="img02">
+        <section class="imagem">
             <p>
                 Tenho saudade das cartas<br>
                 Escritas com a própria mão<br>
@@ -140,7 +77,7 @@
             </p>
         </section>
         
-        <section>
+        <section class="normal">
             <p>
                 Agora, escrevo e envio<br>
                 Chegando na mesma hora<br>
@@ -152,7 +89,7 @@
             </p>
         </section>
         <br>
-        <section>
+        <section class="normal">
             <p>
                 Felizmente, pra orar<br>
                 Não precisa de internet<br>
@@ -164,5 +101,8 @@
             </p>
         </section>
     </main>
+    <footer>
+        <p>Site criado por InfinitWest</p>
+    </footer>
 </body>
 </html>
