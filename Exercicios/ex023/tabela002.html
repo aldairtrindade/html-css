@@ -12,6 +12,8 @@
 
         table{
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,19 +21,47 @@
             padding: 10px;
         }
 
-        thead{
-            background-color: gray;
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: rgb(52, 52, 52);
             color: white;
+        }
+
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(52, 52, 52);
+        }
+
+        td.num{
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -39,12 +69,126 @@
                 <td>São Paulo</td>
                 <td>45 919 049</td>
             </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>3 155 213</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>5 258 887</td>
+            </tr>
+            <tr>
+                <td>Santa Cátarina</td>
+                <td>801 455</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>50 219 049</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus impedit sint consequuntur cupiditate ducimus neque exercitationem quibusdam deserunt magni laudantium possimus enim doloribus, rerum sequi sapiente harum, facere amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui dolore at architecto porro eos similique? Porro tempora tenetur sed quia libero nihil veniam saepe exercitationem, deserunt incidunt nostrum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto culpa assumenda earum, adipisci odio esse velit nihil nemo error minus labore ratione tempore dolorum. Quos exercitationem quod expedita asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis unde ab quasi reprehenderit sunt hic, consectetur sequi. Veritatis pariatur numquam consequatur tempora quia. Eum cupiditate dicta expedita. Cupiditate, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus impedit sint consequuntur cupiditate ducimus neque exercitationem quibusdam deserunt magni laudantium possimus enim doloribus, rerum sequi sapiente harum, facere amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui dolore at architecto porro eos similique? Porro tempora tenetur sed quia libero nihil veniam saepe exercitationem, deserunt incidunt nostrum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto culpa assumenda earum, adipisci odio esse velit nihil nemo error minus labore ratione tempore dolorum. Quos exercitationem quod expedita asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis unde ab quasi reprehenderit sunt hic, consectetur sequi. Veritatis pariatur numquam consequatur tempora quia. Eum cupiditate dicta expedita. Cupiditate, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus impedit sint consequuntur cupiditate ducimus neque exercitationem quibusdam deserunt magni laudantium possimus enim doloribus, rerum sequi sapiente harum, facere amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui dolore at architecto porro eos similique? Porro tempora tenetur sed quia libero nihil veniam saepe exercitationem, deserunt incidunt nostrum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto culpa assumenda earum, adipisci odio esse velit nihil nemo error minus labore ratione tempore dolorum. Quos exercitationem quod expedita asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis unde ab quasi reprehenderit sunt hic, consectetur sequi. Veritatis pariatur numquam consequatur tempora quia. Eum cupiditate dicta expedita. Cupiditate, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus impedit sint consequuntur cupiditate ducimus neque exercitationem quibusdam deserunt magni laudantium possimus enim doloribus, rerum sequi sapiente harum, facere amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui dolore at architecto porro eos similique? Porro tempora tenetur sed quia libero nihil veniam saepe exercitationem, deserunt incidunt nostrum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto culpa assumenda earum, adipisci odio esse velit nihil nemo error minus labore ratione tempore dolorum. Quos exercitationem quod expedita asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis unde ab quasi reprehenderit sunt hic, consectetur sequi. Veritatis pariatur numquam consequatur tempora quia. Eum cupiditate dicta expedita. Cupiditate, nemo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus impedit sint consequuntur cupiditate ducimus neque exercitationem quibusdam deserunt magni laudantium possimus enim doloribus, rerum sequi sapiente harum, facere amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui dolore at architecto porro eos similique? Porro tempora tenetur sed quia libero nihil veniam saepe exercitationem, deserunt incidunt nostrum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iusto culpa assumenda earum, adipisci odio esse velit nihil nemo error minus labore ratione tempore dolorum. Quos exercitationem quod expedita asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis unde ab quasi reprehenderit sunt hic, consectetur sequi. Veritatis pariatur numquam consequatur tempora quia. Eum cupiditate dicta expedita. Cupiditate, nemo.</p>
 </body>
 </html>
